@@ -29,6 +29,6 @@ public class IPAddressController {
 
     @RequestMapping(value = "/ip", method = RequestMethod.GET)
     public IPAddress ipaddress() throws Exception {
-        return new IPAddress(++counter, InetAddress.getLocalHost().getHostAddress());
+        return null;
     }
 }

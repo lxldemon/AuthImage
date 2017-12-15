@@ -15,17 +15,16 @@
  */
 package AuthImage.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class IPAddress {
-
-    private final long id;
-    private final String ipAddress;
-
-    public IPAddress(long id, String ipAddress) {
-        this.id = id;
-        this.ipAddress = ipAddress;
-    }
-
-    public long getId() {
+    @Id
+     @GeneratedValue
+    private Integer  id;
+    @Column(name = "ipAddress")
+    private String ipAddress;
+    public Integer  getId() {
         return id;
     }
 

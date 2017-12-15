@@ -6,7 +6,7 @@ import java.util.Date;
 @Entity
 public class Sys_user {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue
     private Integer id;
     @Column(name = "username")
     private String username;
